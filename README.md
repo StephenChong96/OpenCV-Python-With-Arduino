@@ -11,9 +11,9 @@ This is a project for STEM Playground in collaboration with IEEE Curtin Malaysia
 
 [<img align="left" alt="codeSTACKr.com" width="22px" src="https://raw.githubusercontent.com/iconic/open-iconic/master/svg/globe.svg" />][website]
 
-**Thank You For Your Time and Attention👏🏻**
-
 <br />
+
+**Thank You For Your Time and Attention👏🏻**
 
 [website]: https://create.arduino.cc/projecthub/shubhamsantosh99/face-tracker-using-opencv-and-arduino-55412e?ref=search&ref_id=recognition&offset=25
 [youtube]: https://youtube.com/codeSTACKr
