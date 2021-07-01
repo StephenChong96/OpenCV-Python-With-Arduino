@@ -41,8 +41,6 @@ while (True):
         
         img = 'my image.png'
         cv2.imwrite(img, roi_gray)
-        img = '8.png'
-        cv2.imwrite(img, roi_color)
 
         # Draw rectangle
         color = (255, 255, 0) # BGR 0-255 (255 strongest)(Blue = 255)
