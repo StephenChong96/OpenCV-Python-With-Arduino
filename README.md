@@ -8,7 +8,7 @@ This is a project for STEM Playground in collaboration with IEEE Curtin Malaysia
 ### Introduction:
 
 [<img align="left" alt="codeSTACKr | YouTube" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/youtube.svg" />][youtube]
-[<img align="left" alt="tinkercad.com" width="22px" src="Extra\tinkercad.svg" width="100" />][tinkercad]
+[<img align="left" alt="tinkercad.com" height="22px" src="Extra\tinkercad.svg" width="100" />][tinkercad]
 
 <br />
 
