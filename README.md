@@ -1,7 +1,9 @@
 ## OpenCV - Python with Arduino :movie_camera:
 <img align="left" alt="gif" src="\Images\.png" height="100" />
 <img align="left" alt="gif" src="https://media.giphy.com/media/1YZQJBcZWgdaoUoVRd/giphy.gif" height="100" />
-
+ 
+ <br>
+ 
 This is a project for STEM Playground in collaboration with IEEE Curtin Malaysia Student Branch. Here, OpenCV Haar Cascade Classifier Pyserial will be used. Finally, OpenCV will output the face coordinates to the arduino, allowing the servo motor to track the movement of the face.
  - Added Face Recognizer
  - Changed cv2.rectangle colour
