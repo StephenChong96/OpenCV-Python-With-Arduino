@@ -14,7 +14,7 @@ This is a project for STEM Playground in collaboration with IEEE Curtin Malaysia
 ### Project Reference:
 
 [<img align="left" alt="codeSTACKr.com" width="22px" src="https://raw.githubusercontent.com/iconic/open-iconic/master/svg/globe.svg" />][website]
-[<img align="left" alt="tinkercad.com" width="22px" src="Extra\tinkercad logo.png" width="100" />][tinkercad]
+[<img align="left" alt="tinkercad.com" width="55px" src="Extra\tinkercad logo.png" width="100" />][tinkercad]
 
 <br />
 <br />
