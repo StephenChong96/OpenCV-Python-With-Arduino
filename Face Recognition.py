@@ -1,33 +1,47 @@
 import numpy as np
 import cv2
 import pickle
+import serial,time
 
-def make_1080p():
-    cap.set(3, 1920)
-    cap.set(4, 1080)
+def make_720p():
+    cap.set(3, 1280)
+    cap.set(4, 720)
 
 face_cascade = cv2.CascadeClassifier('Haar Cascade Classifier\data\haarcascade_frontalface_alt.xml')
 recognizer = cv2.face.LBPHFaceRecognizer_create()
 recognizer.read("trainedface.yml")
+# Setup communication path for arduino (In place of 'COM5' put the port to which your arduino is connected)
+arduino = serial.Serial('com3', 9600)
+time.sleep(1)
 
 labels = {}
 with open("labels.pickle", "rb") as f:
     og_labels = pickle.load(f)
     labels = {v:k for k,v in og_labels.items()}
 
-cap = cv2.VideoCapture(0)
-make_1080p()
+cap = cv2.VideoCapture(1)
+# Resize frame to 720p
+make_720p()
 
 while (True):
     # Capture frame-by-frame
     ret, frame = cap.read()
+    frame = cv2.flip(frame, 1)  # Mirror the image
     gray = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
-    faces = face_cascade.detectMultiScale(gray, scaleFactor= 1.5, minNeighbors= 5)
-    for (x, y, w, h) in faces:
-        # print(x, y, w, h)
+    faces = face_cascade.detectMultiScale(gray, 1.5, 5)  # Face detector
+    for x,y,w,h in faces:
+        # Sending coordinates to Arduino
+        data = 'X{0:d}Y{1:d}'.format((x+w//2), (y+h//2))
+        print(data)
+        arduino.write(data.encode('utf-8'))
         roi_gray = gray[y: y+h, x: x+w] # Region of interest
-        roi_color = frame[y: y+h, x: x+w] # (ycord_start, ycord_end)
-        
+        # Plot the center of the face
+        cv2.circle(frame,(x+w//2, y+h//2), 2, (0, 255, 0), 2)
+        # Plot the roi
+        cv2.rectangle(frame, (x, y),(x+w, y+h), (255, 255, 0), 3)
+        # Plot the squared region in the center of the screen
+        cv2.rectangle(frame,(1280//2-30, 720//2-30), (1280//2+30, 720//2+30), (255, 255, 255), 3)
+
         # Recognizor (Deep learned model predict: keras, tensorflov, pytorch, scikit-learn)
         id, conf = recognizer.predict(roi_gray)
         if conf >= 30:
@@ -38,19 +52,10 @@ while (True):
             color = (255, 255, 255) # White
             stroke = 2
             cv2.putText(frame, name, (x,y), font, 1, color, stroke, cv2.LINE_AA)
-        
-        img = 'my image.png'
-        cv2.imwrite(img, roi_gray)
-
-        # Draw rectangle
-        color = (255, 255, 0) # BGR 0-255 (255 strongest)(Blue = 255)
-        stroke = 2          # Line width
-        end_cord_x = x+w  # Width
-        end_cord_y = y+h  # Height
-        cv2.rectangle(frame, (x, y), (end_cord_x, end_cord_y), color, stroke)
-
-    # Display the resulting frame
+    
+  # Display the resulting frame
     cv2.imshow('frame', frame)
+    # Press p to quit
     if cv2.waitKey(20) & 0xFF == ord('p'):
         break
 

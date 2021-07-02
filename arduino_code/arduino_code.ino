@@ -1,22 +1,23 @@
 //Face Tracker using OpenCV and Arduino
 //by Shubham Santosh
 
-#include<Servo.h>
+#include <Servo.h>
 
 Servo x, y;
-int width = 640, height = 480;  // total resolution of the video
+int width = 1280, height = 720;  // total resolution of the video
 int xpos = 90, ypos = 90;  // initial positions of both Servos
-void setup() {
 
+void setup() {
   Serial.begin(9600);
-  x.attach(9);
-  y.attach(10);
+  x.attach(3);
+  y.attach(5);
   // Serial.print(width);
   //Serial.print("\t");
   //Serial.println(height);
   x.write(xpos);
   y.write(ypos);
 }
+
 const int angle = 2;   // degree of increment or decrement
 
 void loop() {
@@ -30,7 +31,7 @@ void loop() {
         y_mid = Serial.parseInt(); // read center y-coordinate
     }
     /* adjust the servo within the squared region if the coordinates
-        is outside it
+       is outside it
     */
     if (x_mid > width / 2 + 30)
       xpos += angle;
@@ -40,7 +41,6 @@ void loop() {
       ypos -= angle;
     if (y_mid > height / 2 - 30)
       ypos += angle;
-
 
     // if the servo degree is outside its range
     if (xpos >= 180)

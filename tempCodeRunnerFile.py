@@ -1,1 +1,1 @@
-id
+'Haar Cascade Classifier\data\haarcascade_frontalface_alt.xml
