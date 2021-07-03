@@ -15,7 +15,7 @@ This is a project for STEM Playground in collaboration with IEEE Curtin Malaysia
 
 ### Project Reference:
 
-[<img align="left" alt="codeSTACKr.com" width="22px" src="https://raw.githubusercontent.com/StephenChong96/StephenChong96/7e293bedf9d07cf97bbeb32b6da0c58443411b9f/Extra/arduino.svg" />][website]
+[<img align="left" alt="codeSTACKr.com" height="22px" src="https://raw.githubusercontent.com/StephenChong96/StephenChong96/7e293bedf9d07cf97bbeb32b6da0c58443411b9f/Extra/arduino.svg" />][website]
 
 <br />
 <br />
