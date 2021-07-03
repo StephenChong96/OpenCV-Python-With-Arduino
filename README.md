@@ -2,13 +2,13 @@
 <p align="center">
 <img align="center" alt="gif" src="Extra\.gif" height="100" />
 
-This is a project for STEM Playground in collaboration with IEEE Curtin Malaysia Student Branch. Here, OpenCV Haar Cascade Classifier Pyserial will be used. Finally, OpenCV will output the face coordinates to the arduino, allowing the servo motor to track the movement of the face.
+This is a project for STEM Playground in collaboration with IEEE Curtin Malaysia Student Branch. Here, OpenCV Haar Cascade Classifier and Pyserial will be used. Finally, OpenCV will output the face coordinates to the arduino, allowing the servo motor to track the movement of the face.
  - Added Face Recognizer
  - Changed cv2.rectangle colour
 
 ### Introduction:
 
-[<img align="left" alt="codeSTACKr | YouTube" width="22px" src="https://cdn.jsdelivr.net/npm/simple-icons@v3/icons/youtube.svg" />][youtube]
+[<img align="left" alt="codeSTACKr | YouTube" width="22px" src="https://raw.githubusercontent.com/StephenChong96/StephenChong96/6eb389ff3c5c888ffc71370f9698d4d102b5a835/Extra/youtube%20colour.svg" />][youtube]
 [<img align="left" alt="tinkercad.co" height="22px" src="Extra\tinkercad.svg" width="100" />][tinkercad]
 
 <br />
