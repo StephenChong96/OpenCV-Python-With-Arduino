@@ -3,7 +3,8 @@
 <img align="center" alt="gif" src="https://media.githubusercontent.com/media/StephenChong96/git-lfs/master/OpenCV_smaller.gif?token=AUUWR6FFVYRVPCWIA2SVTNLA4B4BS" height="300" />
 
 This is a project for STEM Playground in collaboration with IEEE Curtin Malaysia Student Branch. Here, OpenCV Haar Cascade Classifier and Pyserial will be used. Finally, OpenCV will output the face coordinates to the arduino, allowing the servo motor to track the movement of the face.
- - Added Face Recognizer
+ - Added Face Recognizer with import pickle
+ - Rescale frame to 720p to capture screen better
  - Changed cv2.rectangle colour
 
 ### Introduction:
