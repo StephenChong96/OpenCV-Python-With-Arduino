@@ -18,7 +18,7 @@ void setup() {
   y.write(ypos);
 }
 
-const int angle = 2;   // degree of increment or decrement
+const int angle = 1;   // degree of increment or decrement
 
 void loop() {
   if (Serial.available() > 0)
