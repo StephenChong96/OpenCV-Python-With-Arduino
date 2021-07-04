@@ -1,6 +1,6 @@
 ## OpenCV - Python with Arduino :movie_camera:
 <p align="center">
-<img align="center" alt="gif" src="https://media.githubusercontent.com/media/StephenChong96/git-lfs/master/OpenCV_smaller.gif?token=AUUWR6EMY33Q3JZY26NJDTLA4CT7M" height="300" />
+<img align="center" alt="gif" src="https://github.com/StephenChong96/git-lfs/blob/master/OpenCV_smaller.gif" height="300" />
 
 This is a project for STEM Playground in collaboration with IEEE Curtin Malaysia Student Branch. Here, OpenCV Haar Cascade Classifier and Pyserial will be used. Finally, OpenCV will output the face coordinates to the arduino, allowing the servo motor to track the movement of the face.
  - Added Face Recognizer with import pickle
@@ -16,7 +16,7 @@ This is a project for STEM Playground in collaboration with IEEE Curtin Malaysia
 
 ### Project Reference:
 
-[<img align="left" alt="codeSTACKr.com" height="22px" src="https://raw.githubusercontent.com/StephenChong96/StephenChong96/7e293bedf9d07cf97bbeb32b6da0c58443411b9f/Extra/arduino.svg" />][website]
+[<img align="left" alt="codeSTACKr.com" height="22px" src="https://github.com/StephenChong96/StephenChong96/blob/master/Extra/arduino.svg" />][website]
 
 <br />
 <br />
