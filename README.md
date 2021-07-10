@@ -9,7 +9,7 @@ This is a project for STEM Playground in collaboration with IEEE Curtin Malaysia
 
 ### Introduction:
 
-[go][<img align="left" alt="codeSTACKr | YouTube" width="22px" src="https://raw.githubusercontent.com/StephenChong96/StephenChong96/6eb389ff3c5c888ffc71370f9698d4d102b5a835/Extra/youtube%20colour.svg" />][youtube]{:target="_blank" rel="noopener"}
+[<img align="left" alt="codeSTACKr | YouTube" width="22px" src="https://raw.githubusercontent.com/StephenChong96/StephenChong96/6eb389ff3c5c888ffc71370f9698d4d102b5a835/Extra/youtube%20colour.svg" />][youtube]
 [<img align="left" alt="tinkercad.co" height="22px" src="https://raw.githubusercontent.com/StephenChong96/StephenChong96/7e293bedf9d07cf97bbeb32b6da0c58443411b9f/Extra/tinkercad.svg" width="100" />][tinkercad]
 
 <br />
