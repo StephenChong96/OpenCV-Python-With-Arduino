@@ -25,4 +25,4 @@ This is a project for STEM Playground in collaboration with IEEE Curtin Malaysia
 
 [website]: https://create.arduino.cc/projecthub/shubhamsantosh99/face-tracker-using-opencv-and-arduino-55412e?ref=search&ref_id=recognition&offset=25
 [tinkercad]: https://www.tinkercad.com/things/iWWPlSyJZms
-[youtube]: https://youtube.com/codeSTACKr
+[youtube]: https://youtu.be/U81WpUDikxU
